@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="candle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="candle">
+        <div class="flame"></div>
+        <div class="wick"></div>
+        <div class="wax"></div>
+    </div>
+
+    <script>
+        const flame = document.querySelector('.flame');
+
+        setInterval(() => {
+            const scale = 1 + Math.random() * 0.1;
+            flame.style.transform = `translateX(-50%) scaleY(${scale})`;
+        }, 100);
+    </script>
+
+</body>
+
+</html>
